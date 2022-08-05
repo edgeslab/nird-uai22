@@ -1,0 +1,29 @@
+{
+    
+    "case"      : "2b",
+    "seed"      : 12345,
+    "algos"     : ["mcit", "krcit"],
+    "target"    : "num_edges",
+    "num_trials": 100,
+    "graph" : {
+        "params" : {
+            "test_type": "conditional",
+            "network_type": "Barabasi_Albert",
+            "num_nodes": 100,
+            "num_edges": [1, 2, 3],
+            "num_hops": 1,
+            "num_covar": 1,
+            "conf_coeff": 1.0,
+            "aggregate": "mean",
+            "dep_type": "polynomial"
+        },
+        "null_params" : {
+            "hypothesis": "null",
+            "dependence": 0.0
+        },
+        "alt_params" : {
+            "hypothesis": "alt",
+            "dependence": 0.5
+        }
+    }
+}

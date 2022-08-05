@@ -1,0 +1,28 @@
+{
+    
+    "case"      : "1b",
+    "seed"      : 12345,
+    "algos"     : ["mcit"],
+    "approx"    : true,
+    "target"    : "sample_size",
+    "num_trials": 1,
+    "graph" : {
+        "params" : {
+            "test_type": "marginal",
+            "network_type": "Twitter",
+            "sample_size": [10000],
+            "num_hops": 1,
+            "num_covar": 0,
+            "d_steps": 20,
+            "aggregate": "ltm"
+        },
+        "null_params" : {
+            "hypothesis": "null",
+            "alpha": 0.0
+        },
+        "alt_params" : {
+            "hypothesis": "alt",
+            "alpha": 1.0
+        }
+    }
+}

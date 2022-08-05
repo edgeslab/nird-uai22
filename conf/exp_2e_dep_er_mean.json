@@ -1,0 +1,28 @@
+{
+    
+    "case"      : "2e",
+    "seed"      : 12345,
+    "algos"     : ["mcit", "krcit"],
+    "target"    : "dependence",
+    "num_trials": 100,
+    "graph" : {
+        "params" : {
+            "test_type": "conditional",
+            "network_type": "Erdos_Renyi",
+            "num_nodes": 50,
+            "edge_prob": 0.05,
+            "num_hops": 1,
+            "num_covar": 1,
+            "aggregate": "mean",
+            "dep_type": "linear"
+        },
+        "null_params" : {
+            "hypothesis": "null",
+            "dependence": 0.0
+        },
+        "alt_params" : {
+            "hypothesis": "alt",
+            "dependence": [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+        }
+    }
+}

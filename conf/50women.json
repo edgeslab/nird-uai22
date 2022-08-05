@@ -1,0 +1,10 @@
+{
+    "case"      : "1b",
+    "seed"      : 12345,
+    "algos"     : ["mcit"],
+    "graph" : {
+        "periods": ["1-2", "2-3", "1-23"],
+        "attributes": ["alcohol", "drug", "smoke", "sport"],
+        "att_types": ["binary", "categorical"]
+    }
+}

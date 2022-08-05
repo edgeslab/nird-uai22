@@ -1,0 +1,28 @@
+{
+    
+    "case"      : "1b",
+    "seed"      : 12345,
+    "algos"     : ["mcit", "krcit"],
+    "target"    : "num_nodes",
+    "num_trials": 100,
+    "graph" : {
+        "params" : {
+            "test_type": "marginal",
+            "network_type": "Erdos_Renyi",
+            "num_nodes": [50, 100, 150, 200, 250],
+            "edge_prob": 0.005,
+            "num_hops": 1,
+            "num_covar": 0,
+            "aggregate": "mean",
+            "dep_type": "linear"
+        },
+        "null_params" : {
+            "hypothesis": "null",
+            "dependence": 0.0
+        },
+        "alt_params" : {
+            "hypothesis": "alt",
+            "dependence": 0.5
+        }
+    }
+}
